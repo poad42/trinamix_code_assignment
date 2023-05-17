@@ -62,8 +62,10 @@ public:
     void attack(Hero &hero)
     {
         if (is_dead())
+        {
             cout << "Monster is dead and cannot attack." << endl;
             return;
+        }
         hero.damage(damage_);
     }
 
